@@ -1,9 +1,0 @@
-update after every major project
-
-
- work left->
- any other thing from resume
- any links of codeforces, leet wagairah
-
-My Responsive Personal Portfolio used html css and js 
-All projects are used frontend and backend repositories in my personal portfolio. 
