@@ -26,7 +26,7 @@ const showMenu = (toggLeId, navId) => {
   
   // AUTO-TYPING
   var typed = new Typed('.home__title-color', {
-    strings: ['Saif.', 'a Front End Developer.', 'a Web Developer.'],
+    strings: ['Saif.', 'a Front End Developer.'],   //, 'a Front End Web Developer.'],
     typeSpeed: 60,
     backSpeed: 60,
     loop: true,
