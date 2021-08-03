@@ -31,7 +31,7 @@ const showMenu = (toggLeId, navId) => {
     backSpeed: 60,
     loop: true,
   });
-  
+
   // SCROLL-NAVIGATION
   // SCROLL-BUTTON
   window.addEventListener('scroll', function(){
