@@ -288,6 +288,20 @@ img{
   width: 400px;
   border-radius: .5rem;
 }
+.btn_resume {
+  margin-top: 10px;
+  background-color: #4070F4;
+  border: none;
+  border-radius: 2%;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* Darker background on mouse-over */
+.btn_resume:hover {
+  background-color: rgb(50, 94, 224);
+}
 
 /* SKILLS-SECTION */
 .skills__container{
