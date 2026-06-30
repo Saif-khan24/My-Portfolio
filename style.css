@@ -605,3 +605,101 @@ img{
     right: 10%;
   }
 }
+
+.home{
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-skills{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+}
+
+.home__data,
+.home__social{
+    position:relative;
+    z-index:2;
+}
+
+.floating-skills span{
+    position:absolute;
+    padding:8px 16px;
+    border:1px solid rgba(64,112,244,.25);
+    border-radius:40px;
+    background:rgba(64,112,244,.06);
+    color: #4070F4;
+    font-size:14px;
+    font-weight:400;
+    white-space:nowrap;
+    animation:float 5s ease-in-out infinite;
+    opacity: 0.5;
+}
+
+.floating-skills span:nth-child(1){top:14%;left:14%;animation-delay:0s;}
+.floating-skills span:nth-child(2){top:16%;left:42%;animation-delay:.5s;}
+.floating-skills span:nth-child(3){top:12%;right:8%;animation-delay:1s;}
+
+.floating-skills span:nth-child(4){top:28%;left:2%;animation-delay:1.5s;}
+.floating-skills span:nth-child(5){top:34%;left:35%;animation-delay:2s;}
+.floating-skills span:nth-child(6){top:26%;right:15%;animation-delay:2.5s;}
+
+.floating-skills span:nth-child(7){top:40%;left:8%;animation-delay:3s;}
+.floating-skills span:nth-child(8){top:56%;left:22%;animation-delay:3.5s;}
+.floating-skills span:nth-child(9){top:56%;right:18%;animation-delay:4s;}
+
+.floating-skills span:nth-child(10){top:66%;left:5%;animation-delay:4.5s;}
+.floating-skills span:nth-child(11){top:64%;left:48%;animation-delay:5s;}
+.floating-skills span:nth-child(12){top:70%;right:10%;animation-delay:5.5s;}
+
+.floating-skills span:nth-child(13){top:80%;left:15%;animation-delay:6s;}
+.floating-skills span:nth-child(14){top:84%;left:38%;animation-delay:6.5s;}
+.floating-skills span:nth-child(15){top:76%;right:26%;animation-delay:7s;}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    25%{
+        transform:translateY(-10px) rotate(2deg);
+    }
+
+    50%{
+        transform:translateY(6px) rotate(-2deg);
+    }
+
+    75%{
+        transform:translateY(-6px) rotate(1deg);
+    }
+}
+
+@media(max-width:992px){
+
+    .floating-skills span{
+        font-size:12px;
+        padding:6px 12px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .floating-skills span{
+        font-size:11px;
+        padding:5px 10px;
+    }
+
+    /* Hide a few so they don't overlap */
+    .floating-skills span:nth-child(3),
+    .floating-skills span:nth-child(6),
+    .floating-skills span:nth-child(9),
+    .floating-skills span:nth-child(12),
+    .floating-skills span:nth-child(15){
+        display:none;
+    }
+
+}
